@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!--- 定义日志格式 -->
+    <property name="def.log.charset" value="utf-8"/>
+    <property name="def.log.pattern" value="[%d{yyyy-MM-dd HH:mm:ss.SSS}] [%highlight(%-5level)] [%t] [%logger{20}] >>> msg=%m %n"/>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>${def.log.pattern}</pattern>
+        </encoder>
+    </appender>
+
+    　　　
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+</configuration>

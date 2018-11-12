@@ -1,0 +1,63 @@
+.jobOffersSec1 {
+    text-align: center;
+}
+.jobOffersSec1 h1 {
+    font-size: 2.4rem;
+    margin-bottom: .5em;
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 500;
+}
+.jobOffersSec1 p {
+    margin-bottom: 1em;
+}
+.jobOffersSec2 {
+    padding: .8rem;
+    width: 90%;
+    margin: 0 auto;
+}
+.jobOffersSec2 .jobOffersItem {
+    margin: .8rem auto;
+    border: 1px solid #e8e8e8;
+}
+.jobOffersSec2 .jobOffersItem .jobOffersItem_header {
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 16px;
+    padding: 16px 32px;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 500;
+    border-bottom: 1px solid #e8e8e8;
+    -webkit-transition: padding 0.3s;
+    -o-transition: padding 0.3s;
+    transition: padding 0.3s;
+}
+.jobOffersSec2 .jobOffersItem .jobOffersItem_body {
+    padding: 24px 32px;
+    -webkit-transition: padding .3s;
+    -o-transition: padding .3s;
+    transition: padding .3s;
+}
+.jobOffersSec2 .jobOffersItem .jobOffersItem_body h4 {
+    margin-bottom: .5em;
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 500;
+}
+.jobOffersSec2 .jobOffersItem .jobOffersItem_body ol {
+    list-style-type: decimal;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+.jobOffersSec3 {
+    background-color: #fafafa;
+    padding: 2rem;
+}
+.jobOffersSec3 p {
+    margin-bottom: 1em;
+}

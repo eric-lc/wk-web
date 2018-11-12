@@ -1,0 +1,48 @@
+.aboutUsSec1 {
+    width: 100%;
+    height: 468px;
+    background: url(/images/about/about_us2-1.png);
+}
+.aboutUsSec1 p {
+    font-size: 40px;
+    color: #ffffff;
+    line-height: 60px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 190px;
+}
+.aboutUsSec2 {
+    width: 1000px;
+    margin: 100px auto 0;
+}
+.aboutUsSec2 h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #395a80;
+    font-weight: bold;
+    padding-left: 28px;
+}
+.aboutUsSec2 p {
+    text-indent: 28px;
+    padding: 0px;
+    margin: 25px 0px 0px;
+    font-size: 14px;
+    color: #6b7686;
+    line-height: 25px;
+}
+.aboutUsSec3 {
+    text-align: center;
+}
+.aboutUsSec3 h2 {
+    margin: 100px 0px 20px;
+    padding: 0px;
+    font-size: 22px;
+    color: #395a80;
+}
+.aboutUsSec3 p {
+    margin: 0px 0px 20px;
+    padding: 0px;
+    font-size: 14px;
+    color: #6b7686;
+    line-height: 27px;
+}
