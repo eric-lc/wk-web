@@ -14,11 +14,3 @@ dist
 /RUNNING_PID
 /.settings
 /bin/
-*.bak
-*.css
-*.html
-*.js
-*.png
-run*.sh
-apidoc/*
-*.zip

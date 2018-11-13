@@ -1,0 +1,338 @@
+h2 {
+  margin-bottom: 10px;
+}
+.banner {
+  background: url(/images/product/banner.png) no-repeat 0px;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src="/images/product/banner.png");
+  padding: 2rem;
+}
+.banner .innner {
+  float: right;
+  width: 715px;
+  color: #fff;
+}
+.banner .innner h1 {
+  font-size: 30px;
+}
+.banner .innner h1 strong {
+  font-weight: normal;
+  color: #ffa6a6;
+}
+.banner .innner h1 b {
+  font-weight: normal;
+  color: #b1ffd4;
+}
+.banner .innner p {
+  line-height: 46px;
+  margin-bottom: 1rem;
+}
+/*为什么要做微分销开始*/
+.whydofx {
+  background-color: #f6f6f8;
+  padding-top: 40px;
+}
+.whydofx .container {
+  overflow: hidden;
+}
+.whydofx .container p {
+  text-align: center;
+  font-size: 20px;
+  padding: 0px 30px;
+  color: #666666;
+}
+.whydofx .container .whydofxLists {
+  width: 1250px ;
+  padding-top: 50px;
+  padding-bottom: 58px;
+  overflow: hidden;
+}
+.whydofx .container .whydofxLists li {
+  width: 20%;
+  float: left;
+  text-align: center;
+  margin-right: 25px;
+  margin-left: 25px;
+  margin-bottom: -1110px;
+  padding-bottom: 1110px;
+  background: #fff;
+}
+.whydofx .container .button a{
+	color:#fff;
+}
+.whydofx .container .whydofxLists li .inner {
+  display: block;
+  padding: 30px;
+  height: 100%;
+}
+.whydofx .container .whydofxLists li .inner h4 {
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #ff9000;
+}
+.whydofx .container .whydofxLists li .inner p {
+  font-size: 16px;
+  padding: 0;
+}
+.whydofx .container .button {
+  display: block;
+  margin: 30px auto;
+  background-color: #ff9000;
+  color: #fff;
+  border-radius: 5px;
+  border: 0;
+  outline: none;
+}
+/*为什么要做微分销结束*/
+/*微信分销 六大亮点开始*/
+.DistributionHighlights {
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+.DistributionHighlights .desc {
+  text-align: center;
+  margin-bottom: .8rem;
+  font-size: 24px;
+  color: #666666;
+}
+.DistributionHighlights strong {
+  font-weight: normal;
+}
+.DistributionHighlights ul {
+  overflow: hidden;
+}
+.DistributionHighlights ul li {
+  float: left;
+  width: 50%;
+}
+.DistributionHighlights ul li .item_Img {
+  width: 70px;
+  margin: 20px;
+  float: left;
+}
+.DistributionHighlights ul li .media-body {
+	width:490px;
+  float: left;
+  padding-top:20px;
+}
+.DistributionHighlights ul li .media-body h3 {
+  text-align: left;
+}
+.DistributionHighlights ul li .media-body p {
+  color: #646464;
+}
+/*微信分销 六大亮点结束*/
+/*微分销价值体现开始*/
+.ValueEmbodiment {
+	overflow:hidden;
+  background-color: #fafafa;
+}
+.ValueEmbodiment button{
+	display:block;
+	margin: 0 auto;
+	border-color:#f5222d;
+	color:#f5222d;
+	margin-bottom:50px;
+	margin-top:20px;
+}
+.ValueEmbodiment h2 {
+  font-size: 36px;
+}
+.ValueEmbodiment p {
+  text-align: center;
+  font-size: 24px;
+  color: #666666;
+}
+.ValueEmbodiment img {
+  display: block;
+  margin: 0 auto;
+  max-width:100%;
+}
+/*微分销价值体现结束*/
+/*分销商四大独有功能开始*/
+.SellingFunction .title_img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.SellingFunction .SellingFunctionContent li {
+  margin-top: .8rem;
+  margin-bottom: .8rem;
+  white-space: normal;
+  vertical-align: middle;
+}
+.SellingFunction .SellingFunctionContent li .img {
+  width: 50%;
+  display: inline-block;
+}
+.SellingFunction .SellingFunctionContent li .desc_text {
+  display: inline-block;
+  width: 40%;
+  font-size: 2rem;
+  color: #ff9000;
+  text-align: center;
+}
+/*分销商四大独有功能结束*/
+/*20万家大客户的选择开始*/
+.CustomerSelection {
+  background-color: #fafafa;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.CustomerSelection h2 {
+  font-size: 36px;
+  margin-bottom: 0;
+}
+.CustomerSelection p {
+  text-align: center;
+  font-size: 24px;
+  /*color: #fff;*/
+}
+.CustomerSelection ul {
+  padding: 50px 25px;
+  overflow: hidden;
+  margin-right: -25px;
+  color: #fff;
+}
+.CustomerSelection ul li {
+  width: 205px;
+  padding: 70px 12px;
+  margin-right: 30px;
+  float: left;
+  text-align: center;
+  margin-bottom: -50px;
+  padding-bottom: 50px;
+}
+.CustomerSelection ul li h3 {
+  font-size: 36px;
+  color: #fff;
+}
+.CustomerSelection ul li p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.CustomerSelection ul li .button {
+  padding: 0 25px;
+  height: 40px;
+  font-size: 20px;
+}
+.CustomerSelection ul li:first-child {
+  background-color: #0e86d5;
+}
+.CustomerSelection ul li:first-child .button {
+  color: #0e86d5;
+}
+.CustomerSelection ul li:nth-child(2) {
+  background-color: #80a80b;
+}
+.CustomerSelection ul li:nth-child(2) .button {
+  color: #80a80b;
+}
+.CustomerSelection ul li + li {
+  background-color: #80a80b;
+}
+.CustomerSelection ul li + li .button {
+  color: #80a80b;
+}
+.CustomerSelection ul li:nth-child(3) {
+  background-color: #0e86d5;
+}
+.CustomerSelection ul li:nth-child(3) .button {
+  color: #0e86d5;
+}
+.CustomerSelection ul li + li + li {
+  background-color: #0e86d5;
+}
+.CustomerSelection ul li + li + li .button {
+  color: #0e86d5;
+}
+.CustomerSelection ul li:nth-child(4) {
+  background-color: #80a80b;
+}
+.CustomerSelection ul li:nth-child(4) .button {
+  color: #80a80b;
+}
+.CustomerSelection ul li + li + li + li {
+  background-color: #80a80b;
+}
+.CustomerSelection ul li + li + li + li .button {
+  color: #80a80b;
+}
+.CustomerSelection ul li:nth-child(5) {
+  background-color: #0e86d5;
+}
+.CustomerSelection ul li:nth-child(5) .button {
+  color: #0e86d5;
+}
+.CustomerSelection ul li + li + li + li + li {
+  background-color: #0e86d5;
+}
+.CustomerSelection ul li + li + li + li + li .button {
+  color: #0e86d5;
+}
+.CustomerSelection .button.doMore {
+  height: 60px;
+  margin: 50px auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: block;
+  background-color: #f15a01;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 30px;
+}
+/*20万家大客户的选择结束*/
+/**/
+.CustomerSelection2 {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.CustomerSelection2 h2 {
+  font-size: 36px;
+  margin-bottom: 0;
+}
+.CustomerSelection2 p {
+  text-align: center;
+  font-size: 24px;
+  color: #666666;
+}
+.CustomerSelection2 ul {
+  padding-top: 50px;
+  overflow: hidden;
+  margin-right: -15px;
+}
+.CustomerSelection2 ul li {
+  width: 33.333%;
+  float: left;
+  font-size: 0;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+.CustomerSelection2 ul li img {
+  width: 100%;
+}
+/*在线注册开始*/
+.registration img {
+  width: 100%;
+  min-width: 1200px;
+}
+.registration .container {
+  padding: 30px 125px;
+  overflow: hidden;
+}
+.registration .container strong {
+  float: left;
+  font-size: 26px;
+  line-height: 54px;
+}
+.registration .container .button {
+  width: 214px;
+  height: 54px;
+  margin-right: 50px;
+  float: right;
+  background-color: #ff9900;
+  font-size: 24px;
+  color: #fff;
+  border: 0;
+}
+/*在线注册结束*/
