@@ -1,2 +1,2 @@
 chcp 65001
-java -jar -Dfile.encoding=UTF-8 wk-web-1.0-SNAPSHOT.jar > out.log 2>&1
+java -jar -Dfile.encoding=UTF-8 -Dloader.path=.,config,lib,res wk-web.jar > out.log 2>&1

@@ -6,7 +6,7 @@
 
     <groupId>com.wk</groupId>
     <artifactId>wk-web</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -71,27 +71,119 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <fork>true</fork><!-- 如果没有该项配置，肯呢个devtools不会起作用，即应用不会restart -->
-                </configuration>
-            </plugin>
-            <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
             </plugin>
+
+            <!--**********分离资源文件及依赖包打包配置*************-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>target/lib</outputDirectory>
+                            <excludeTransitive>false</excludeTransitive>
+                            <stripVersion>false</stripVersion>
+                            <includeScope>runtime</includeScope>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>**/*.properties</exclude>
+                        <exclude>**/*.xml</exclude>
+                        <exclude>static/**</exclude>
+                        <exclude>templates/**</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <layout>ZIP</layout>
+                    <includes>
+                        <include>
+                            <groupId>non-exists</groupId>
+                            <artifactId>non-exists</artifactId>
+                        </include>
+                    </includes>
+                    <fork>true</fork>
+                </configuration>
                 <executions>
                     <execution>
                         <goals>
                             <goal>repackage</goal>
                         </goals>
+                        <configuration>
+                            <classifier>classes</classifier>
+                            <attach>false</attach>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.8</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <target>
+                                <property name="dist">target/build</property>
+                                <property name="res">target/build/res</property>
+                                <property name="res-config">target/build/config</property>
+                                <property name="dist-tmp">target/build/tmp</property>
+                                <property name="app-name">${project.artifactId}-${project.version}</property>
+                                <property name="real-app-name">${project.artifactId}</property>
+                                <delete dir="${dist}" />
+                                <mkdir dir="${dist}" />
+                                <mkdir dir="${dist-tmp}" />
+                                <mkdir dir="${res}" />
+                                <copy file="target/${app-name}.jar" tofile="${dist-tmp}/${app-name}.jar" />
+                                <unzip src="${dist-tmp}/${app-name}.jar" dest="${dist-tmp}" />
+                                <delete file="${dist-tmp}/${app-name}.jar" />
+                                <move file="target/${app-name}-classes.jar" tofile="${dist}/${real-app-name}.jar"/>
+                                <move todir="${dist}/lib">
+                                    <fileset dir="target/lib" />
+                                </move>
+
+                                <delete dir="${dist-tmp}" />
+
+                                <copy todir="${res}">
+                                    <fileset dir="target/classes">
+                                        <include name="**/static/**" />
+                                        <include name="**/templates/**" />
+                                    </fileset>
+                                </copy>
+                                <copy todir="${res-config}">
+                                    <fileset dir="target/classes">
+                                        <include name="**/*.properties" />
+                                        <include name="**/*.xml" />
+                                        <include name="**/*.yml" />
+                                    </fileset>
+                                </copy>
+                            </target>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
