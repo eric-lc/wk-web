@@ -27,7 +27,7 @@ document.writeln("<div id=\"best3g_swt_YQ\" class=\"swtCenterY\"><span id=\"midd
 document.writeln("  <h3>全国首批微信开发服务商</h3>");
 document.writeln("  <h4>具有实战运营经验的顾问为您一对一服务<br/>咨询电话：133-4615-7195</h4>");
 document.writeln("  <p>看过网站无数遍，不如免费咨询一下更实用！</p>");
-document.writeln("  <a class=\"swt_list1 absolute\" href=\"http://www.com/reg.html?sid=0&pid=0\" target=\"_blank\"><i class=\"swtCallIcon\"></i><span>注册立享折扣</span></a><a id=\"midderswt_hide2\" class=\"swt_list2 absolute\" href=\"javascript:void(0)\" target=\"_self\" onclick=\"openZoosUrl('chatwin','&e=foot');return false;\" rel=\"20\" ><i id=\"swtLinkCounter\" class=\"swtLinkCounter\"><img src=\"/images/common/numbIco.gif\"></i><i class=\"swtLinkIcon\"></i><span>一对一服务</span></a>");
+document.writeln("  <a class=\"swt_list1 absolute\" href=\"/register/\" target=\"_blank\"><i class=\"swtCallIcon\"></i><span>注册立享折扣</span></a><a id=\"midderswt_hide2\" class=\"swt_list2 absolute\" href=\"javascript:;\" target=\"_self\" onclick=\"openZoosUrl('chatwin','&e=foot');return false;\" rel=\"20\" ><i id=\"swtLinkCounter\" class=\"swtLinkCounter\"><img src=\"/images/common/numbIco.gif\"></i><i class=\"swtLinkIcon\"></i><span>一对一服务</span></a>");
 document.writeln("</div>");
 
 

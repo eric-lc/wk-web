@@ -10,4 +10,10 @@ public class HomeController {
     public String index() {
         return "Home/index";
     }
+
+    /**用户注册**/
+    @GetMapping("/register")
+    public String register() {
+        return "Home/register";
+    }
 }

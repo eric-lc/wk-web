@@ -114,6 +114,7 @@ h3 {
 .navbar {
   padding-top: 6px;
   padding-bottom: 6px;
+  height: 61px;
 }
 .navbar .navs {
   line-height: 49px;
